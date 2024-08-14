@@ -1,0 +1,57 @@
+{
+  "platform": "binance",
+  "api_key": "xxxxx",
+  "api_secret": "xxxxx",
+  "spot_price_asset": "USDT",
+  "spot_price_asset_precision": 0.00000001,
+  "future_price_asset": "USDT",
+  "future_price_asset_precision": 0.00000001,
+  "trade_symbol_pool_count": 100,
+  "trade_symbol_leverage":5,
+  "position_symbol_pool_count": 50,
+  "fund_rate_history_count":100,
+  "single_max_trade_amount": 80,
+  "single_min_trade_amount": 30,
+  "difference_check_flag": true,
+  "mode": "normal",
+  "init_flag":true,
+  "init_start_date":"2024-04-07",
+  "init_spot_total_value": "20000",
+  "init_future_total_value": "0",
+  "future_risk_warning_threshold": 68,
+  "trade_config": [
+    {
+      "risk_radio_limit": 0,
+      "deposit_min_fund_rate": 0.0001,
+      "deposit_min_premium_rate": 0.0009,
+      "withdraw_min_fund_rate":-0.00009,
+      "withdraw_min_premium_rate":-0.0015,
+      "last_eliminate_min_premium_rate":0.0015,
+      "reduce_min_premium_rate":0.0015
+    },{
+      "risk_radio_limit": 30,
+      "deposit_min_fund_rate": 0.0001,
+      "deposit_min_premium_rate": 0.0009,
+      "withdraw_min_fund_rate":-0.00009,
+      "withdraw_min_premium_rate":-0.0015,
+      "last_eliminate_min_premium_rate":0.0012,
+      "reduce_min_premium_rate":0.0012
+    },{
+      "risk_radio_limit": 68,
+      "deposit_min_fund_rate": 0.0003,
+      "deposit_min_premium_rate": 0.0009,
+      "withdraw_min_fund_rate":0.00001,
+      "withdraw_min_premium_rate":0.0005,
+      "last_eliminate_min_premium_rate":-0.0015,
+      "reduce_min_premium_rate":-0.0015
+    },{
+      "risk_radio_limit": 80,
+      "deposit_min_fund_rate": 0.0003,
+      "deposit_min_premium_rate": 0.0009,
+      "withdraw_min_fund_rate":0.00001,
+      "withdraw_min_premium_rate":0.0005,
+      "last_eliminate_min_premium_rate":-0.008,
+      "reduce_min_premium_rate":-0.008
+    }
+  ]
+}
